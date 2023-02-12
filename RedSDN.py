@@ -13,7 +13,7 @@ from subprocess import call
 def myNetwork():
 
     net = Mininet( topo=None,
-    	           listenPort=6633,
+    	           listenPort=6653,
                    build=False
                    )
 
