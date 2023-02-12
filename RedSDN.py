@@ -14,8 +14,7 @@ def myNetwork():
 
     net = Mininet( topo=None,
     	           listenPort=6633,
-                   build=False,
-                   ipBase='192.168.0.0/16'
+                   build=False
                    )
 
     info( '* Adding controller\n' )
@@ -31,7 +30,7 @@ def myNetwork():
     s9 = net.addSwitch('s9', protocols='OpenFlow13')
     s4 = net.addSwitch('s4', protocols='OpenFlow13')
     s7 = net.addSwitch('s7', protocols='OpenFlow13')
-    s1 = net.addSwitch('s1', protocols='OpenFlow13') #Facultad 1
+    s1 = net.addSwitch('s1', protocols='OpenFlow13') 
     s8 = net.addSwitch('s8', protocols='OpenFlow13')
     s5 = net.addSwitch('s5', protocols='OpenFlow13')
     s3 = net.addSwitch('s3', protocols='OpenFlow13')
